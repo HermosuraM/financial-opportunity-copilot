@@ -1,0 +1,116 @@
+[
+  {
+    "label": "opp_high_yield_savings",
+    "n_train": 3750,
+    "n_test": 1250,
+    "base_rate": 0.4032,
+    "best_model": "hist_gradient_boosting",
+    "metrics": {
+      "logistic_regression": {
+        "roc_auc": 0.91,
+        "pr_auc": 0.8694,
+        "brier": 0.1185
+      },
+      "hist_gradient_boosting": {
+        "roc_auc": 0.9513,
+        "pr_auc": 0.9385,
+        "brier": 0.0882
+      }
+    }
+  },
+  {
+    "label": "opp_emergency_fund_gap",
+    "n_train": 3750,
+    "n_test": 1250,
+    "base_rate": 0.5562,
+    "best_model": "hist_gradient_boosting",
+    "metrics": {
+      "logistic_regression": {
+        "roc_auc": 0.9341,
+        "pr_auc": 0.9388,
+        "brier": 0.1006
+      },
+      "hist_gradient_boosting": {
+        "roc_auc": 0.9459,
+        "pr_auc": 0.955,
+        "brier": 0.0946
+      }
+    }
+  },
+  {
+    "label": "opp_retirement_gap",
+    "n_train": 3750,
+    "n_test": 1250,
+    "base_rate": 0.4006,
+    "best_model": "hist_gradient_boosting",
+    "metrics": {
+      "logistic_regression": {
+        "roc_auc": 0.9999,
+        "pr_auc": 0.9998,
+        "brier": 0.0124
+      },
+      "hist_gradient_boosting": {
+        "roc_auc": 1.0,
+        "pr_auc": 1.0,
+        "brier": 0.0
+      }
+    }
+  },
+  {
+    "label": "opp_high_interest_debt",
+    "n_train": 3750,
+    "n_test": 1250,
+    "base_rate": 0.6502,
+    "best_model": "logistic_regression",
+    "metrics": {
+      "logistic_regression": {
+        "roc_auc": 1.0,
+        "pr_auc": 1.0,
+        "brier": 0.0
+      },
+      "hist_gradient_boosting": {
+        "roc_auc": 1.0,
+        "pr_auc": 1.0,
+        "brier": 0.0
+      }
+    }
+  },
+  {
+    "label": "opp_tax_loss_harvest",
+    "n_train": 3750,
+    "n_test": 1250,
+    "base_rate": 0.079,
+    "best_model": "hist_gradient_boosting",
+    "metrics": {
+      "logistic_regression": {
+        "roc_auc": 0.9884,
+        "pr_auc": 0.9247,
+        "brier": 0.0321
+      },
+      "hist_gradient_boosting": {
+        "roc_auc": 0.9978,
+        "pr_auc": 0.9792,
+        "brier": 0.0102
+      }
+    }
+  },
+  {
+    "label": "opp_subscription_creep",
+    "n_train": 3750,
+    "n_test": 1250,
+    "base_rate": 0.1828,
+    "best_model": "hist_gradient_boosting",
+    "metrics": {
+      "logistic_regression": {
+        "roc_auc": 0.9353,
+        "pr_auc": 0.8736,
+        "brier": 0.0885
+      },
+      "hist_gradient_boosting": {
+        "roc_auc": 0.9688,
+        "pr_auc": 0.9044,
+        "brier": 0.0553
+      }
+    }
+  }
+]
