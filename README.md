@@ -61,8 +61,8 @@ every label in [`reports/`](reports/)):
 
 | opportunity | best model | PR-AUC | ROC-AUC | base rate |
 |---|---|---|---|---|
-| opp_subscription_creep | HistGradientBoosting | 0.974 | 0.993 | 18.3% |
-| opp_tax_loss_harvest | HistGradientBoosting | 0.994 | 0.999 | 7.9% |
+| opp_subscription_creep | HistGradientBoosting | 0.904 | 0.969 | 18.3% |
+| opp_tax_loss_harvest | HistGradientBoosting | 0.979 | 0.998 | 7.9% |
 | opp_high_yield_savings | HistGradientBoosting | 0.939 | 0.951 | 40.3% |
 | opp_emergency_fund_gap | HistGradientBoosting | 0.955 | 0.946 | 55.6% |
 | opp_retirement_gap | HistGradientBoosting | 1.000 | 1.000 | 40.1% |
@@ -73,7 +73,7 @@ and `opp_high_interest_debt` hit ~1.00 because their rules key off account
 *metadata* a bank always knows exactly (contribution rate vs. employer match
 cap; card APR) — there's no staleness to model, so it's a rule lookup, not a
 learned pattern. The other four key off noised balance/spend/holdings feeds
-and land in a more believable 0.94–0.99 range, which is where the modeling
+and land in a more believable 0.90–0.98 range, which is where the modeling
 actually earns its keep. The demo notebook
 ([`notebooks/demo.ipynb`](notebooks/demo.ipynb)) walks through this
 distinction with the diagnostic plots inline.

@@ -15,7 +15,7 @@ GROUP BY customer_id, category;
 -- name: subscription_trend
 -- Month-over-month growth rate of "subscriptions" spend using a window
 -- function (LAG) over each customer's ordered months, then averaged across
--- the trailing 3 months to smooth noise.
+-- every month-over-month change (11 changes for 12 months of history).
 WITH sub AS (
     SELECT
         customer_id,
